@@ -56,10 +56,13 @@ const useLogin = () => {
     let ranges = indexes.map(
       (index) => `&ranges=${C.SHEETS.user}!${index + 1}:${index + 1}`
     );
+    console.log("Ranges:");
+    console.log(ranges);
     let data = await fetch(
       `${C.SPREADSHEET}:batchGet?key=${C.KEY}${ranges.join("")}`
     ).then((res) => res.json().then((res) => res.valueRanges));
-
+    console.log("data:");
+    console.log(data);
     const allLogins = data.map((d) => ({
       carreraid: d.values[0][2],
       orientacionid: d.values[0][3],
@@ -106,6 +109,7 @@ const useLogin = () => {
     fetch(`${C.GRAPH_FORM}`, {
       body: formData,
       method: "POST",
+      mode: "no-cors"
     })
       .then((r) => setSaving(false))
       .catch((r) => setSaving(false));
@@ -157,6 +161,7 @@ const useLogin = () => {
     fetch(`${C.USER_FORM}`, {
       body: formData,
       method: "POST",
+      mode: "no-cors"
     });
 
     const carrera = CARRERAS.find((c) => c.id === carreraid);

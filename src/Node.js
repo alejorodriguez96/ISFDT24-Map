@@ -119,7 +119,7 @@ class Node {
 
       const promedioCBC = sumCBC ? (sumCBC / materiasCBC.length).toFixed(2) : 0;
 
-      this.label = breakWords("Ciclo Básico Común");
+      this.label = breakWords("Examen Suficiencia");
       if (showLabels && promedioCBC) this.label += "\n[" + promedioCBC + "]";
       if (materiasCBC.length === 6) this.color = COLORS.aprobadas[400];
       else this.color = COLORS.aprobadas[100];

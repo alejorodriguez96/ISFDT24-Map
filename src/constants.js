@@ -2,22 +2,22 @@ import CARRERAS from "./carreras";
 import { COLORS } from "./theme";
 
 export const USER_FORM =
-  "https://docs.google.com/forms/u/1/d/e/1FAIpQLSedZWz0SJOLsxEscmHo8FDdTQyIF5xTczGBqr1Z6oLwKwiemw/formResponse";
+  "https://docs.google.com/forms/d/1ZRb0hJ4fZjlaV-NNtmBHVb5y92Hxzq--4jKQaQD62CQ/formResponse";
 
 export const USER_FORM_ENTRIES = {
-  padron: "entry.1608351524",
-  carrera: "entry.1130086596",
-  orientacion: "entry.1483291801",
-  finDeCarrera: "entry.310979509",
+  padron: "entry.315974123",
+  carrera: "entry.1215075080",
+  orientacion: "entry.2135693433",
+  finDeCarrera: "entry.1619476447",
 };
 
 export const GRAPH_FORM =
-  "https://docs.google.com/forms/d/e/1FAIpQLScEomNxSEdv07ifB9ep5olsemzRjdPoMMhWL6GLGhswm93shg/formResponse";
+  "https://docs.google.com/forms/d/1Oq7oHVvGcx7Ikn5UYo5B53fqZnrjK0srJCDOT9xVTik/formResponse";
 
 export const GRAPH_FORM_ENTRIES = {
-  padron: "entry.2064135385",
-  carrera: "entry.977368567",
-  map: "entry.2113204957",
+  padron: "entry.315974123",
+  carrera: "entry.1215075080",
+  map: "entry.2135693433",
 };
 
 export const BUGS_FORM =
@@ -32,14 +32,14 @@ export const BUGS_FORM_ENTRIES = {
 };
 
 export const SPREADSHEET =
-  "https://sheets.googleapis.com/v4/spreadsheets/1b6h2RApBs2xbN6-eGVvxH68EALKDklvS91fb7d_IVz4/values";
+  "https://sheets.googleapis.com/v4/spreadsheets/1Tq4vU1AEoA7_ekdMSkyXhYEbeUY5ESa0cAx4vs5bRKY/values";
 
 export const SHEETS = {
   user: "usuarios",
   registros: "registros",
 };
 
-export const KEY = "AIzaSyA9snz4CXDq_K8fJeUXkRtRZAQM90HTFp4";
+export const KEY = "AIzaSyAh5pkFqQv0vpZI7qx5K9Mw2x6soFeTeC0";
 
 export const GRUPOS = {
   Aprobadas: { color: COLORS.aprobadas[400] },
