@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/ISFDT24-Map/static/js/main.f4e51c16.chunk.js",
-    "main.js.map": "/ISFDT24-Map/static/js/main.f4e51c16.chunk.js.map",
+    "main.js": "/ISFDT24-Map/static/js/main.ffd9f8ac.chunk.js",
+    "main.js.map": "/ISFDT24-Map/static/js/main.ffd9f8ac.chunk.js.map",
     "runtime-main.js": "/ISFDT24-Map/static/js/runtime-main.332c5ff9.js",
     "runtime-main.js.map": "/ISFDT24-Map/static/js/runtime-main.332c5ff9.js.map",
     "static/js/2.96be3947.chunk.js": "/ISFDT24-Map/static/js/2.96be3947.chunk.js",
     "static/js/2.96be3947.chunk.js.map": "/ISFDT24-Map/static/js/2.96be3947.chunk.js.map",
     "index.html": "/ISFDT24-Map/index.html",
-    "precache-manifest.213d86c03370a2902048b823bb3e3f1a.js": "/ISFDT24-Map/precache-manifest.213d86c03370a2902048b823bb3e3f1a.js",
+    "precache-manifest.ab1c55f9ed5ed6f77749d4820806c385.js": "/ISFDT24-Map/precache-manifest.ab1c55f9ed5ed6f77749d4820806c385.js",
     "service-worker.js": "/ISFDT24-Map/service-worker.js",
     "static/js/2.96be3947.chunk.js.LICENSE.txt": "/ISFDT24-Map/static/js/2.96be3947.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.332c5ff9.js",
     "static/js/2.96be3947.chunk.js",
-    "static/js/main.f4e51c16.chunk.js"
+    "static/js/main.ffd9f8ac.chunk.js"
   ]
 }
