@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cadf3042b4397e051ef0a57a9f3fee4f",
+    "revision": "3d345ef331d5ae52616760f3171b707f",
     "url": "/ISFDT24-Map/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ISFDT24-Map/static/js/2.c23f2d18.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dba1d569ee198fed21c8",
-    "url": "/ISFDT24-Map/static/js/main.caf6c1f4.chunk.js"
+    "revision": "3ecceee611efb2df13d5",
+    "url": "/ISFDT24-Map/static/js/main.ee9f6ec6.chunk.js"
   },
   {
     "revision": "47f078bd40519c163895",
