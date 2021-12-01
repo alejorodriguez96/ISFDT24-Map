@@ -13,7 +13,7 @@
     "react-graph-vis": "^1.0.7",
     "react-scripts": "^3.4.3"
   },
-  "homepage": "https://fede.dm/FIUBA-Map",
+  "homepage": "https://alejorodriguez96.github.io/ISFDT24-Map/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
