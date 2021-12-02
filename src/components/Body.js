@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import {
   InfoOutlineIcon,
-  CheckIcon,
   ExternalLinkIcon,
   Icon,
   MoonIcon,
@@ -13,9 +12,6 @@ import {
   AlertTitle,
   Box,
   CloseButton,
-  DarkMode,
-  Flex,
-  IconButton,
   LightMode,
   Link,
   SlideFade,
@@ -23,7 +19,6 @@ import {
   TagLabel,
   TagRightIcon,
   Text,
-  Textarea,
   Tooltip,
   useColorMode,
   useColorModeValue,
@@ -54,7 +49,7 @@ const Body = (props) => {
     network,
     openCBC,
   } = React.useContext(GraphContext);
-  const { user, logged, submitBug } = React.useContext(UserContext);
+  const { user, logged } = React.useContext(UserContext);
   const { setDisplayedNode } = props;
   const toast = useToast();
   const bugToast = React.useRef();
