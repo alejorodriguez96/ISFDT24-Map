@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/ISFDT24-Map/static/js/main.f2b7e5ef.chunk.js",
-    "main.js.map": "/ISFDT24-Map/static/js/main.f2b7e5ef.chunk.js.map",
+    "main.js": "/ISFDT24-Map/static/js/main.68329cdf.chunk.js",
+    "main.js.map": "/ISFDT24-Map/static/js/main.68329cdf.chunk.js.map",
     "runtime-main.js": "/ISFDT24-Map/static/js/runtime-main.332c5ff9.js",
     "runtime-main.js.map": "/ISFDT24-Map/static/js/runtime-main.332c5ff9.js.map",
-    "static/js/2.b2ec790c.chunk.js": "/ISFDT24-Map/static/js/2.b2ec790c.chunk.js",
-    "static/js/2.b2ec790c.chunk.js.map": "/ISFDT24-Map/static/js/2.b2ec790c.chunk.js.map",
+    "static/js/2.692a5e69.chunk.js": "/ISFDT24-Map/static/js/2.692a5e69.chunk.js",
+    "static/js/2.692a5e69.chunk.js.map": "/ISFDT24-Map/static/js/2.692a5e69.chunk.js.map",
     "index.html": "/ISFDT24-Map/index.html",
-    "precache-manifest.a3158269f7e082af0d652bb80658a09f.js": "/ISFDT24-Map/precache-manifest.a3158269f7e082af0d652bb80658a09f.js",
+    "precache-manifest.8be966e1fcb8eafdab5ee3942d0ed610.js": "/ISFDT24-Map/precache-manifest.8be966e1fcb8eafdab5ee3942d0ed610.js",
     "service-worker.js": "/ISFDT24-Map/service-worker.js",
-    "static/js/2.b2ec790c.chunk.js.LICENSE.txt": "/ISFDT24-Map/static/js/2.b2ec790c.chunk.js.LICENSE.txt"
+    "static/js/2.692a5e69.chunk.js.LICENSE.txt": "/ISFDT24-Map/static/js/2.692a5e69.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.332c5ff9.js",
-    "static/js/2.b2ec790c.chunk.js",
-    "static/js/main.f2b7e5ef.chunk.js"
+    "static/js/2.692a5e69.chunk.js",
+    "static/js/main.68329cdf.chunk.js"
   ]
 }

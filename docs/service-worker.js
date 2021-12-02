@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ISFDT24-Map/precache-manifest.a3158269f7e082af0d652bb80658a09f.js"
+  "/ISFDT24-Map/precache-manifest.8be966e1fcb8eafdab5ee3942d0ed610.js"
 );
 
 self.addEventListener('message', (event) => {
