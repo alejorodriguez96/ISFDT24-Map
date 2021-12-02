@@ -136,7 +136,7 @@ const Footer = () => {
             }
           >
             <Stat p="0.4em" color="white" size="sm">
-              <StatLabel>Créditos</StatLabel>
+              <StatLabel>Materias</StatLabel>
               <StatNumber>
                 {stats.creditosTotales + " de " + user.carrera?.creditos.total}
               </StatNumber>
@@ -230,9 +230,9 @@ const Footer = () => {
                         </Checkbox>
                       </LightMode>
                     ) : c.creditosNecesarios ? (
-                      `${c.creditos} de ${c.creditosNecesarios} créditos necesarios`
+                      `${c.creditos} de ${c.creditosNecesarios} materias necesarias`
                     ) : (
-                      `Tenés ${c.creditos} créditos.
+                      `Tenés ${c.creditos} materias aprobadas.
                       Elegí ${
                         user.carrera.eligeOrientaciones === true &&
                         !user.orientacion
@@ -276,21 +276,7 @@ const Footer = () => {
                           ))}
                         </>
                       )}
-                    {c.nombre.includes("Materias Electivas") && (
-                      <Tooltip
-                        placement="bottom"
-                        label="Agregar créditos por fuera del plan"
-                      >
-                        <IconButton
-                          onClick={() => {
-                            addOptativa("Materia Optativa", 4);
-                          }}
-                          size="sm"
-                          float="right"
-                          icon={<PlusSquareIcon boxSize={4} />}
-                        />
-                      </Tooltip>
-                    )}
+                    {c.nombre.includes("Materias Electivas")}
                   </PopoverBody>
                 </PopoverContent>
               </Popover>
@@ -329,12 +315,6 @@ const Footer = () => {
                   </strong>
                 </Text>
                 <Text fontSize="md">{promedioConAplazos(aplazos)}</Text>
-              </Flex>
-              <Flex justifyContent="space-between" alignItems="center">
-                <Text fontSize="md">
-                  <strong>Promedio con CBC</strong>
-                </Text>
-                <Text fontSize="md">{promedioConCBC()}</Text>
               </Flex>
             </PopoverBody>
           </PopoverContent>
