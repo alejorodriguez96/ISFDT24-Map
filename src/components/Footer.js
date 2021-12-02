@@ -1,7 +1,6 @@
 import {
   CheckIcon,
   EditIcon,
-  PlusSquareIcon,
   SmallCloseIcon,
 } from "@chakra-ui/icons";
 import {
@@ -53,11 +52,9 @@ const Footer = () => {
     stats,
     toggleCheckbox,
     optativas,
-    addOptativa,
     aplazos,
     setAplazos,
     promedioConAplazos,
-    promedioConCBC,
     editOptativa,
     removeOptativa,
   } = React.useContext(GraphContext);
