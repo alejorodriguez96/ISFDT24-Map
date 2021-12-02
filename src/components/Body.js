@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import {
-  ChatIcon,
+  InfoOutlineIcon,
   CheckIcon,
   ExternalLinkIcon,
   Icon,
@@ -28,6 +28,8 @@ import {
   useColorMode,
   useColorModeValue,
   useToast,
+  UnorderedList,
+  ListItem
 } from "@chakra-ui/react";
 import React, { useEffect, useRef } from "react";
 import Graph from "react-graph-vis";
@@ -56,7 +58,6 @@ const Body = (props) => {
   const { setDisplayedNode } = props;
   const toast = useToast();
   const bugToast = React.useRef();
-  const [showGracias, setShowGracias] = React.useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
 
   const ref = useRef(null);
@@ -225,25 +226,11 @@ const Body = (props) => {
             {useColorModeValue(<MoonIcon />, <SunIcon />)}
           </Link>
         </Tooltip>
-        <Tooltip label="FIUBA-Plan" placement="top">
+        <Tooltip label="alejorodriguez96/ISFDT24-Map" placement="top">
           <Link
             isExternal
             color={useColorModeValue("text", "textdark")}
-            href="https://fede.dm/FIUBA-Plan/"
-          >
-            <Icon boxSize={5} ml={2} viewBox="0 0 448 512">
-              <path
-                fill="currentColor"
-                d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h96c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-96zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"
-              />
-            </Icon>
-          </Link>
-        </Tooltip>
-        <Tooltip label="FdelMazo/FIUBA-Map" placement="top">
-          <Link
-            isExternal
-            color={useColorModeValue("text", "textdark")}
-            href="https://github.com/fdelmazo/FIUBA-Map"
+            href="https://github.com/alejorodriguez96/ISFDT24-Map"
           >
             <Icon boxSize={5} ml={2} viewBox="0 0 16 16">
               <path
@@ -257,7 +244,7 @@ const Body = (props) => {
           <Link
             isExternal
             color={useColorModeValue("text", "textdark")}
-            href="https://cafecito.app/fdelmazo"
+            href="https://cafecito.app/alejorodriguez96"
           >
             <Icon boxSize={5} ml={2} viewBox="0 0 512 512">
               <path
@@ -293,53 +280,28 @@ const Body = (props) => {
                         <AlertTitle>Hola!</AlertTitle>
                         <AlertDescription px={5} display="block">
                           <Text>
-                            Si encontrás algo feo, incorrecto, lento, erroneo...
-                            me decís?
+                            Estas son algunas aclaraciones sobre el uso de esta pagina:
                           </Text>
-                          <Text>
-                            Si ves algo que te gustó, o tenes alguna sugerencia,
-                            también!
-                          </Text>
+                          <UnorderedList>
+                            <ListItem>
+                              <Text>
+                              Donde dice "Identificación" podes registrarte con algun número que te identifique como
+                              estudiante o tu DNI. La base de datos es privada, pero si te preocupa la privacidad podes
+                              registrarte con cualquier número. (Tené en cuenta que no se hace ningún tipo de validación,
+                              si ponés "1234" seguramente cualquiera podrá ver tu avance en la carrera).
+                              </Text>
+                            </ListItem>
+                            <ListItem>
+                              <Text>
+                              El botón de "Materias Electivas" te permite verlas de dos formas distintas: una con aquellas
+                              electivas que podés cursar y otra con todas las materias aunque aún no puedas cursarlas.
+                              </Text>
+                            </ListItem>
+                          </UnorderedList>
                           <Text>
                             Si querés que te responda, escribí tu
                             mail/telegram/algo.
                           </Text>
-                          <form
-                            onSubmit={(t) => {
-                              t.preventDefault();
-                              submitBug(t.target.elements["bug"].value);
-                              setShowGracias(true);
-                              toast.close(bugToast.current);
-                            }}
-                          >
-                            <Flex mt={3} alignItems="flex-end">
-                              <Textarea
-                                resize="none"
-                                borderColor={
-                                  colorMode === "dark" ? "textdark" : "text"
-                                }
-                                color={
-                                  colorMode === "dark" ? "textdark" : "text"
-                                }
-                                focusBorderColor={
-                                  colorMode === "dark"
-                                    ? "electivas.400"
-                                    : "electivas.500"
-                                }
-                                size="sm"
-                                name="bug"
-                              />
-                              <DarkMode>
-                                <IconButton
-                                  ml={3}
-                                  colorScheme="purple"
-                                  size="sm"
-                                  type="submit"
-                                  icon={<ChatIcon />}
-                                />
-                              </DarkMode>
-                            </Flex>
-                          </form>
                           <Text fontSize="sm" mt={2}>
                             ¿Usás Github? me ayudás mucho más levantando un
                             issue{" "}
@@ -386,8 +348,8 @@ const Body = (props) => {
                 }));
               }}
             >
-              <TagLabel>{showGracias ? "Gracias!" : "Sugerencias"}</TagLabel>
-              <TagRightIcon as={showGracias ? CheckIcon : ChatIcon} />
+              <TagLabel>{"Como funciona?"}</TagLabel>
+              <TagRightIcon as={InfoOutlineIcon} />
             </Tag>
           </Box>
         </LightMode>

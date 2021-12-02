@@ -112,7 +112,7 @@ const PadronInput = (props) => {
                 borderColor="white"
                 color="white"
                 name="padron"
-                placeholder="Padrón"
+                placeholder="Identificación"
                 value={user.padron || padronInput}
                 onChange={(e) => setPadronInput(e.target.value)}
                 isDisabled={loading}

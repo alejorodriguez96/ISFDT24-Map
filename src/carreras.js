@@ -4,9 +4,9 @@ import { COLORS } from "./theme";
 export const CARRERAS = [
   {
     id: "ingles",
-    link: "https://www.fi.uba.ar/grado/carreras/lic-en-analisis-de-sistemas/plan-de-estudios",
+    link: "https://isfdyt24-bue.infd.edu.ar/sitio/wp-content/uploads/2020/06/anexo_ingles_caja_curricular-1.pdf",
     graph: data.ingles,
-    nombre: "Profesorado de Inglés",
+    nombre: "Inglés (Plan Nuevo)",
     nombrecorto: "Inglés",
     creditos: {
       total: 176,
