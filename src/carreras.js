@@ -9,16 +9,10 @@ export const CARRERAS = [
     nombre: "Inglés (Plan Nuevo)",
     nombrecorto: "Inglés",
     creditos: {
-      total: 176,
-      obligatorias: 136,
-      electivas: 28,
+      total: 36,
+      obligatorias: 34,
+      electivas: 2,
       checkbox: [
-        {
-          nombre: "Prueba de nivel de idioma inglés",
-          nombrecorto: "Inglés",
-          bg: COLORS.enfinal[50],
-          color: "enfinal",
-        },
       ],
       materias: [
         {
